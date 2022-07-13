@@ -4,6 +4,7 @@ body {
   letter-spacing: 0;
   text-align: center;
   color: #54777D;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
 }
 
 img {
@@ -13,6 +14,10 @@ img {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+p {
+  font-weight: 300;
 }
 
 .firstview {
