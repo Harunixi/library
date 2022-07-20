@@ -133,7 +133,7 @@ header {
 .big {
 
     &__bg {
-        background: url("../images/big_bg.png") center center /cover;
+        background: url("../images/zentai.png") center center /cover;
         background-color: $main-color;
         height: 100vh;
         width: 100%;
@@ -141,12 +141,25 @@ header {
         position: relative;
     }
 
-    &__img {
-        width: 180px;
-        height: 186px;
+    &__img-bg {
+        display: inline-block;
+        background-color: $bg-color;
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
         position: absolute;
         left: 50%;
         top: 880px;
+        margin-left: -140px;
+        z-index: 99;
+    }
+
+    &__img {
+        width: 147px;
+        height: 133px;
+        position: absolute;
+        left: 50%;
+        top: 940px;
         margin-left: -90px;
         z-index: 999;
     }

@@ -82,19 +82,31 @@ header {
 }
 
 .big__bg {
-  background: url("../images/big_bg.png") center center/cover;
+  background: url("../images/zentai.png") center center/cover;
   background-color: #FCF9EA;
   height: 100vh;
   width: 100%;
   margin-top: 215px;
   position: relative;
 }
-.big__img {
-  width: 180px;
-  height: 186px;
+.big__img-bg {
+  display: inline-block;
+  background-color: #F2ECD8;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
   position: absolute;
   left: 50%;
   top: 880px;
+  margin-left: -140px;
+  z-index: 99;
+}
+.big__img {
+  width: 147px;
+  height: 133px;
+  position: absolute;
+  left: 50%;
+  top: 940px;
   margin-left: -90px;
   z-index: 999;
 }
