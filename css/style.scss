@@ -68,6 +68,11 @@ header {
 .top {
     padding: 30px 0;
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: 1200px;
+    margin: auto;
 
     &__logo {
         width: 92px;
@@ -85,6 +90,12 @@ header {
         margin: 0 25px;
     }
 
+    &__right {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
     &__sns-img {
         width: 32px;
         height: 32px;
@@ -95,6 +106,10 @@ header {
         align-items: flex-start;
         flex-wrap: wrap;
         list-style: none;
+    }
+
+    &__sns-li {
+        margin: 0 25px;
     }
 
     p {
@@ -696,7 +711,9 @@ footer {
         margin: 50px 0 65px;
     }
 
-    &__sns-li {}
+    &__sns-li {
+        margin: 0 15px;
+    }
 
     &__sns-img {
         width: 40px;
