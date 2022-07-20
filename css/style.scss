@@ -72,8 +72,8 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    margin: 1200px;
     margin: auto;
+    max-width: (1250/16)+em;
 
     &__logo {
         width: 92px;
@@ -133,34 +133,20 @@ header {
 .big {
 
     &__bg {
-        background: url("../images/zentai.png") center center /cover;
+        background: url("../images/big_bg.png") center center /cover;
         background-color: $main-color;
         height: 100vh;
         width: 100%;
-        margin-top: 215px;
+        margin-top: 205px;
         position: relative;
     }
 
-    &__img-bg {
-        display: inline-block;
-        background-color: $bg-color;
-        border-radius: 50%;
+    &__img {
         width: 250px;
         height: 250px;
         position: absolute;
-        left: 50%;
-        top: 880px;
-        margin-left: -140px;
-        z-index: 99;
-    }
-
-    &__img {
-        width: 147px;
-        height: 133px;
-        position: absolute;
-        left: 50%;
-        top: 940px;
-        margin-left: -90px;
+        top: 860px;
+        margin-left: -130px;
         z-index: 999;
     }
 }
