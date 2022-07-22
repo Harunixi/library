@@ -363,7 +363,7 @@ header {
   width: 88.148%;
   padding: 1.6em;
   font-size: 1.25rem;
-  background-color: #DBD0C0;
+  background-color: #F2ECD8;
   border-radius: 0.2em;
   text-align: left;
   position: relative;
@@ -374,7 +374,7 @@ header {
   height: 1.4em;
   border-top: 0.7em transparent solid;
   border-right: 2.1em transparent solid;
-  border-bottom: 0.7em #DBD0C0 solid;
+  border-bottom: 0.7em #F2ECD8 solid;
   border-left: 2.1em transparent solid;
   position: absolute;
   bottom: 0.8em;
@@ -556,14 +556,14 @@ header {
   margin: auto;
 }
 .news__title {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 300;
-  padding: 110px 0 30px;
+  margin: 110px 0 30px;
 }
 .news__subtitle {
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 300;
-  margin-bottom: 30px;
+  margin-bottom: 1.875em;
 }
 .news__text-block {
   text-align: center;
@@ -648,5 +648,96 @@ footer {
 .foot__sns-img {
   width: 40px;
   height: 40px;
+}
+
+.firstview-qa {
+  background: url("../images/firstview.png") center center/cover;
+  height: 60vh;
+  width: 100%;
+  position: relative;
+}
+.firstview-qa__title {
+  color: #FCF9EA;
+  font-size: 3rem;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  bottom: 30%;
+  right: 0;
+  left: 0;
+  width: 20%;
+  height: 20%;
+  margin: auto;
+}
+
+.contact-qa {
+  background-color: #F2ECD8;
+  padding: 12em 0;
+}
+.contact-qa__subtitle {
+  font-size: 2rem;
+  margin-bottom: 0.75em;
+}
+.contact-qa__title {
+  font-size: 2.5rem;
+  margin-bottom: 2.4em;
+  font-weight: normal;
+}
+.contact-qa__title::before {
+  margin: 0 auto 1.2em;
+  display: block;
+  content: "";
+  width: 1.4em;
+  padding-bottom: 0.05em;
+  background-image: linear-gradient(to right, #54777D, #54777D 4px, transparent 4px, transparent 8px);
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  background-size: 8px 2px;
+}
+.contact-qa__inner {
+  max-width: 80em;
+  width: 66.667%;
+  margin: auto;
+}
+.contact-qa__text {
+  margin-bottom: 4em;
+}
+.contact-qa__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  margin-bottom: 4.25em;
+}
+.contact-qa__label {
+  width: 17%;
+  text-align: right;
+  font-size: 1.25rem;
+}
+.contact-qa__input {
+  padding: 1.5em 2em;
+  width: 80%;
+  background-color: #FCF9EA;
+  height: 4em;
+  font-size: 1rem;
+}
+.contact-qa__textarea {
+  padding: 1.5em 2em;
+  width: 80%;
+  background-color: #FCF9EA;
+  height: 14.375em;
+  font-size: 1rem;
+}
+.contact-qa__button {
+  display: inline-block;
+  font-size: 1.25rem;
+  padding: 1.1em 1.6em;
+  border: 1px solid;
+  border-radius: 3.7em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1.25rem;
+  background-color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
