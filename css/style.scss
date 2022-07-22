@@ -798,3 +798,84 @@ footer {
         background-color: #fff;
     }
 }
+
+//about_vision
+.introduction {
+    padding: (205/16)+em 0 (192/16)+em;
+
+    &__inner {
+        @include inner();
+    }
+
+    &__title {
+        font-size: (40/16)+rem;
+        margin-bottom: (20/16)+em;
+        padding-bottom: (10/16)+em;
+        border-bottom: 1px dashed #707070;
+    }
+
+    &__text {
+        text-align: left;
+        letter-spacing: .02em;
+        line-height: 2.25;
+    }
+
+    &__text2 {
+        margin-top: (50/16)+em;
+        text-align: right;
+        letter-spacing: .2em;
+        line-height: 2.25;
+    }
+}
+
+.explanation {
+    background-color: $bg-color;
+    padding: (192/16)+em 0;
+
+    &__inner {
+        @include inner();
+    }
+
+    &__title {
+        margin-bottom: (64/16)+em;
+    }
+
+    &__logo {
+        width: (400/16)+em;
+        height: (400/16)+em;
+    }
+
+    &__text {
+        margin: (65/16)+em 0 (107/16)+em;
+        line-height: 3.125;
+    }
+
+    &__card {
+        background-color: $main-color;
+        padding: (130/16)+em;
+    }
+
+    &__card-img1 {
+        width: (390/16)+em;
+        height: (205/16)+em;
+    }
+
+    &__card-img {
+        width: (150/16)+em;
+        height: (150/16)+em;
+    }
+
+    &__card-flex {
+        display: flex;
+    }
+
+    &__card-group {
+        display: flex;
+    }
+
+    &__card-text {
+        margin: (95/16)+em 0 (40/16)+em;
+        letter-spacing: .02em;
+        line-height: 2.25;
+    }
+}
