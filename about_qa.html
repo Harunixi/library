@@ -15,13 +15,55 @@
 
 <body>
     <header>
-
+        <div class="top">
+            <h1 class="top__logo">
+                <a href="#" class="top__link">
+                    <img src="./images/logo.png" alt="logo" class="top__img">
+                </a>
+            </h1>
+            <div class="top__right">
+                <nav class="top__gnav">
+                    <ul class="top__ul">
+                        <li class="top__li">
+                            <a href="" class="top__link">Home</a>
+                        </li>
+                        <li class="top__li">
+                            <a href="" class="top__link">Library</a>
+                        </li>
+                        <li class="top__li">
+                            <a href="" class="top__link">Vision</a>
+                        </li>
+                        <li class="top__li">
+                            <a href="" class="top__link">Rent</a>
+                        </li>
+                        <li class="top__li">
+                            <a href="" class="top__link">Q&A</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="top__sns">
+                    <ul class="top__sns-ul">
+                        <li class="top__sns-li">
+                            <a href="#" class="top__sns-link">
+                                <img src="./images/Icon awesome-facebook.png" alt="facebook" class="top__sns-img">
+                            </a>
+                        </li>
+                        <li class="top__sns-li">
+                            <a href="#" class="top__sns-link">
+                                <img src="./images/Icon awesome-instagram.png" alt="instagram" class="top__sns-img">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
+    <div class="firstview-qa">
+        <h2 class="firstview-qa__title">Q&A</h2>
+    </div>
     <main class="main">
         <section class="qa">
             <div class="qa__inner">
-                <p class="about__subtitle">Q & A</p>
-                <h2 class="about__title">よくある質問</h2>
                 <div class="qa__q">
                     <div class="q__image"><img src="images/qa_image1.png" alt=""></div>
                     <p class="q__text">イベントに参加するにあたって、規則・ルールはありますか？</p>
@@ -75,36 +117,71 @@
                 <a href="" class="qa__link">もっと見る</a>
             </div>
         </section>
-        <section class="contact">
-            <div class="contact__inner">
-                <p class="contact__subtitle">ACCESS</p>
-                <h2 class="contact__title">交通手段</h2>
-                <p class="contact__text">暮らせる図書館に関するご質問等ございましたら、下記フォームよりお問い合わせください。</p>
-                <form action="" method="get" class="contact__form">
-                    <div class="contact__flex">
-                        <label class="contact__label" for="name">お名前</label>
-                        <input class="contact__input" type="text" name="name" placeholder="居場所　太郎" required>
+        <section class="contact-qa">
+            <div class="contact-qa__inner">
+                <p class="contact-qa__subtitle">ACCESS</p>
+                <h2 class="contact-qa__title">交通手段</h2>
+                <p class="contact-qa__text">暮らせる図書館に関するご質問等ございましたら、下記フォームよりお問い合わせください。</p>
+                <form action="" method="get" class="contact-qa__form">
+                    <div class="contact-qa__flex">
+                        <label class="contact-qa__label" for="name">お名前</label>
+                        <input class="contact-qa__input" type="text" name="name" placeholder="居場所　太郎" required>
                     </div>
-                    <div class="contact__flex">
-                        <label class="contact__label" for="email">メールアドレス</label>
-                        <input class="contact__input" type="email" name="email" placeholder="ibasho_tarou@gmail.com"
+                    <div class="contact-qa__flex">
+                        <label class="contact-qa__label" for="email">メールアドレス</label>
+                        <input class="contact-qa__input" type="email" name="email" placeholder="ibasho_tarou@gmail.com"
                             required>
                     </div>
-                    <div class="contact__flex">
-                        <label class="contact__label" for="tel">電話番号</label>
-                        <input class="contact__input" type="tel" name="tel" placeholder="090-××××-0000" required>
+                    <div class="contact-qa__flex">
+                        <label class="contact-qa__label" for="tel">電話番号</label>
+                        <input class="contact-qa__input" type="tel" name="tel" placeholder="090-××××-0000" required>
                     </div>
-                    <div class="contact__flex">
-                        <label class="contact__label" for="name">お問い合わせ内容</label>
-                        <textarea class="contact__textarea" placeholder="お問い合わせ内容を入力します。" name=""></textarea>
+                    <div class="contact-qa__flex">
+                        <label class="contact-qa__label" for="name">お問い合わせ内容</label>
+                        <textarea class="contact-qa__textarea" placeholder="お問い合わせ内容を入力します。" name=""></textarea>
                     </div>
                 </form>
-                <input class="contact__button" type="button" value="送信する">
+                <input class="contact-qa__button" type="button" value="送信する">
             </div>
         </section>
     </main>
     <footer class="footer">
-
+        <div class="foot">
+            <div class="foot__inner">
+                <img src="./images/logo.png" alt="logo" class="foot__logo">
+                <div class="foot__nav">
+                    <ul class="foot__ul">
+                        <a href="#" class="foot__link">
+                            <li class="foot__li">about</li>
+                        </a>
+                        <a href="#" class="foot__link">
+                            <li class="foot__li">about</li>
+                        </a>
+                        <a href="#" class="foot__link">
+                            <li class="foot__li">about</li>
+                        </a>
+                        <a href="#" class="foot__link">
+                            <li class="foot__li">about</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="foot__sns">
+                    <ul class="foot__sns-ul">
+                        <li class="foot__sns-li">
+                            <a href="" class="foot__link">
+                                <img src="./images/Icon awesome-instagram.png" alt="instagram" class="foot__sns-img">
+                            </a>
+                        </li>
+                        <li class="foot__sns-li">
+                            <a href="" class="foot__link">
+                                <img src="./images/Icon awesome-facebook.png" alt="facebook" class="foot__sns-img">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <small class="foot__Corporate">@2212 aadadadadadswdswda.dadaadadad</small>
+            </div>
+        </div>
     </footer>
 </body>
 

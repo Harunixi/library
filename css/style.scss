@@ -434,7 +434,7 @@ header {
         width: 88.148%;
         padding: (32/20)+em;
         font-size: (20/16)+rem;
-        background-color: $bg-color2;
+        background-color: $bg-color;
         border-radius: (4/20)+em;
         text-align: left;
         position: relative;
@@ -445,7 +445,7 @@ header {
             height: (28/20)+em;
             border-top: (14/20)+em transparent solid;
             border-right: (42/20)+em transparent solid;
-            border-bottom: (14/20)+em $bg-color2 solid;
+            border-bottom: (14/20)+em $bg-color solid;
             border-left: (42/20)+em transparent solid;
             position: absolute;
             bottom: (16/20)+em;
@@ -612,15 +612,15 @@ header {
     }
 
     &__title {
-        font-size: 40px;
+        font-size: (40/16)+rem;
         font-weight: 300;
-        padding: 110px 0 30px;
+        margin: 110px 0 30px;
     }
 
     &__subtitle {
-        font-size: 16px;
+        font-size: 1em;
         font-weight: 300;
-        margin-bottom: 30px;
+        margin-bottom: (30/16)+em;
     }
 
     &__text-block {
@@ -718,5 +718,83 @@ footer {
     &__sns-img {
         width: 40px;
         height: 40px;
+    }
+}
+
+//about_qa
+.firstview-qa {
+    background: url("../images/firstview.png") center center /cover;
+    height: 60vh;
+    width: 100%;
+    position: relative;
+
+    &__title {
+        color: $main-color;
+        font-size: (48/16)+rem;
+        font-weight: 500;
+        position: absolute;
+        top: 50%;
+        bottom: 30%;
+        right: 0;
+        left: 0;
+        width: 20%;
+        height: 20%;
+        margin: auto;
+    }
+}
+
+.contact-qa {
+    background-color: $bg-color;
+
+    padding: (192/16)+em 0;
+    @include title;
+
+    &__inner {
+        @include inner;
+    }
+
+    &__text {
+        margin-bottom: (64/16)+em;
+    }
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        margin-bottom: (68/16)+em;
+    }
+
+    &__label {
+        width: 17%;
+        text-align: right;
+        font-size: (20/16)+rem;
+    }
+
+    &__input {
+        padding: (24/16)+em (32/16)+em;
+        width: 80%;
+        background-color: $main-color;
+        height: (64/16)+em;
+        font-size: 1rem;
+    }
+
+    &__textarea {
+        padding: (24/16)+em (32/16)+em;
+        width: 80%;
+        background-color: $main-color;
+        height: (230/16)+em;
+        font-size: 1rem;
+    }
+
+    &__button {
+        display: inline-block;
+        font-size: (20/16)+rem;
+        padding: (22/20)+em (32/20)+em;
+        border: 1px solid;
+        border-radius: (74/20)+em;
+        width: fit-content;
+        font-size: (20/16)+rem;
+        background-color: #fff;
     }
 }
