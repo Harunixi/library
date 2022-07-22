@@ -54,6 +54,8 @@ img {
 a {
     text-decoration: none;
     color: inherit;
+    width: fit-content;
+    height: fit-content;
 }
 
 //header
@@ -66,18 +68,20 @@ header {
 }
 
 .top {
-    padding: (30/16)+em 0;
+    padding: (10/16)+em (96/16)+em;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
     margin: auto;
-    max-width: (1250/16)+em;
 
     &__logo {
-        width: 92px;
-        height: 82px;
+        width: (80%/19.2);
+        aspect-ratio: 92/82;
+    }
+
+    &__img {
+        display: block;
     }
 
     &__ul {
@@ -88,10 +92,11 @@ header {
     }
 
     &__li {
-        margin: 0 (25/16)+em;
+        font-size: (24/16)+rem;
+        margin: 0 (25/24)+em;
     }
 
-    &__right {
+    &__flex {
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
@@ -124,19 +129,13 @@ header {
     width: 100%;
 }
 
-.main {
-    &__inner {
-        @include inner;
-    }
-}
-
 .big {
 
     &__bg {
         background: url("../images/big_bg.png") center center /cover;
         background-color: $main-color;
-        height: 100vh;
         width: 100%;
+        aspect-ratio: 1.851/1;
         margin-top: (205/16)+em;
         position: relative;
     }
@@ -145,8 +144,9 @@ header {
         width: (250/16)+em;
         height: (250/16)+em;
         position: absolute;
-        top: (860/16)+em;
-        margin-left: (-135/16)+em;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
         z-index: 999;
     }
 }
