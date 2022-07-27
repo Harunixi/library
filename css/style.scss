@@ -6,6 +6,12 @@ $bg-color: #F2ECD8;
 $bg-color2: #DBD0C0;
 $font-color: #54777D;
 
+@mixin pc {
+    @media screen and(max-width: 680px) {
+        @content;
+    }
+}
+
 @mixin inner {
     max-width: (1280/16)+em;
     width: 66.667%;
@@ -75,13 +81,39 @@ header {
     align-items: center;
     margin: auto;
 
+    @include pc {
+        padding: 1em (28/16)+em;
+    }
+
     &__logo {
-        width: (80%/19.2);
+        width: 60px;
         aspect-ratio: 92/82;
+
+        @include pc {
+            width: 50px;
+        }
     }
 
     &__img {
         display: block;
+    }
+
+    &__btn {
+        display: none;
+
+        @include pc {
+            /* ボタンの配置位置  */
+            position: fixed;
+            top: 32px;
+            right: 16px;
+            /* ボタンの大きさ  */
+            width: 48px;
+            height: 48px;
+            /* 最前面に */
+            z-index: 10;
+            background-color: red;
+            /* わかりやすいように */
+        }
     }
 
     &__ul {
@@ -89,6 +121,20 @@ header {
         align-items: flex-start;
         flex-wrap: wrap;
         list-style: none;
+
+        @include pc {
+            position: fixed;
+            right: -70%;
+            width: 70%;
+            height: 100vh;
+            margin-left: auto;
+            /* メニューを縦に */
+            display: flex;
+            flex-direction: column;
+            color: #efefef;
+            background-color: rgba(167, 148, 58, 0.7);
+            transition: .3s;
+        }
     }
 
     &__li {
@@ -102,20 +148,27 @@ header {
         justify-content: center;
     }
 
-    &__sns-img {
-        width: (32/16)+em;
-        height: (32/16)+em;
-    }
+    &__sns {
 
-    &__sns-ul {
-        display: flex;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        list-style: none;
-    }
+        @include pc {
+            display: none;
+        }
 
-    &__sns-li {
-        margin: 0 (25/16)+em;
+        &-img {
+            width: (32/16)+em;
+            height: (32/16)+em;
+        }
+
+        &-ul {
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+
+        &-li {
+            margin: 0 (25/16)+em;
+        }
     }
 
     p {
@@ -127,6 +180,10 @@ header {
     background: url("../images/firstview.png") center center /cover;
     height: 100vh;
     width: 100%;
+
+    @include pc {
+        height: 60vh;
+    }
 }
 
 .big {
