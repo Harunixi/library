@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-size: 1rem;
   line-height: 1.6875;
@@ -38,18 +39,61 @@ header {
   align-items: center;
   margin: auto;
 }
+@media screen and (max-width: 680px) {
+  .top {
+    padding: 1em 1.75em;
+  }
+}
 .top__logo {
-  width: 4.1666666667%;
+  width: 60px;
   aspect-ratio: 92/82;
+}
+@media screen and (max-width: 680px) {
+  .top__logo {
+    width: 50px;
+  }
 }
 .top__img {
   display: block;
+}
+.top__btn {
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  .top__btn {
+    /* ボタンの配置位置  */
+    position: fixed;
+    top: 32px;
+    right: 16px;
+    /* ボタンの大きさ  */
+    width: 48px;
+    height: 48px;
+    /* 最前面に */
+    z-index: 10;
+    background-color: red;
+    /* わかりやすいように */
+  }
 }
 .top__ul {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
   list-style: none;
+}
+@media screen and (max-width: 680px) {
+  .top__ul {
+    position: fixed;
+    right: -70%;
+    width: 70%;
+    height: 100vh;
+    margin-left: auto;
+    /* メニューを縦に */
+    display: flex;
+    flex-direction: column;
+    color: #efefef;
+    background-color: rgba(167, 148, 58, 0.7);
+    transition: 0.3s;
+  }
 }
 .top__li {
   font-size: 1.5rem;
@@ -59,6 +103,11 @@ header {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+}
+@media screen and (max-width: 680px) {
+  .top__sns {
+    display: none;
+  }
 }
 .top__sns-img {
   width: 2em;
@@ -82,6 +131,11 @@ header {
   height: 100vh;
   width: 100%;
 }
+@media screen and (max-width: 680px) {
+  .firstview {
+    height: 60vh;
+  }
+}
 
 .big__bg {
   background: url("../images/big_bg.png") center center/cover;
@@ -99,59 +153,6 @@ header {
   left: 50%;
   transform: translateX(-50%);
   z-index: 999;
-}
-
-.instagram {
-  margin: auto;
-  padding: 12em 0;
-  width: 67.5%;
-}
-.instagram__title {
-  font-size: 2.5rem;
-  margin-bottom: 0.6em;
-  font-weight: normal;
-}
-.instagram__account {
-  margin-bottom: 4em;
-}
-.instagram__text {
-  margin: 0 auto 4em;
-  text-align: left;
-  width: 61.343%;
-}
-.instagram__images {
-  margin-bottom: 4em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.instagram__flex {
-  width: 49.19%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.instagram__image {
-  aspect-ratio: 1/1;
-  width: 48.235%;
-  border-radius: 0.25em;
-}
-.instagram__image-b {
-  aspect-ratio: 1/1;
-  width: 100%;
-  border-radius: 0.25em;
-}
-.instagram__link {
-  display: inline-block;
-  padding: 1.1rem 1.6rem;
-  border: 1px solid;
-  border-radius: 3.7em;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-size: 1.25rem;
 }
 
 .about {
