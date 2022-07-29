@@ -362,6 +362,20 @@ header {
         @include inner;
     }
 
+    &__title {
+        font-size: (32/16)+em;
+        border-bottom: 1px dashed #000;
+        display: inline-block;
+        font-weight: 500;
+        margin-bottom: (24/16)+em;
+        padding-bottom: (12/16)+em;
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        margin-bottom: (70/16)+em;
+    }
+
     &__q {
         margin-bottom: (32/16)+em;
         display: flex;
@@ -535,7 +549,7 @@ header {
 }
 
 .contact {
-
+    background-color: $bg-color;
     padding: (192/16)+em 0;
     @include title;
 
@@ -564,7 +578,7 @@ header {
     &__input {
         padding: (24/16)+em (32/16)+em;
         width: 80%;
-        background-color: $bg-color;
+        background-color: $main-color;
         height: (64/16)+em;
         font-size: 1rem;
     }
@@ -572,7 +586,7 @@ header {
     &__textarea {
         padding: (24/16)+em (32/16)+em;
         width: 80%;
-        background-color: $bg-color;
+        background-color: $main-color;
         height: (230/16)+em;
         font-size: 1rem;
     }
@@ -722,7 +736,7 @@ footer {
 }
 
 //about_qa
-.firstview-qa {
+.firstview-about {
     background: url("../images/firstview.png") center center /cover;
     height: 60vh;
     width: 100%;
@@ -852,30 +866,281 @@ footer {
 
     &__card {
         background-color: $main-color;
-        padding: (130/16)+em;
-    }
-
-    &__card-img1 {
-        width: (390/16)+em;
-        height: (205/16)+em;
-    }
-
-    &__card-img {
-        width: (150/16)+em;
-        height: (150/16)+em;
+        padding: (68/16)+em;
     }
 
     &__card-flex {
         display: flex;
+        align-items: center;
+        margin-bottom: (95/16)+em;
     }
 
     &__card-group {
         display: flex;
+        align-items: center;
+        margin-bottom: (48/16)+em;
+    }
+
+    &__card-group:last-child {
+        margin-bottom: 0;
+    }
+
+    &__card-img {
+        width: (120/16)+em;
+        height: (120/16)+em;
+        margin-right: (48/16)+em;
+    }
+
+    &__card-img1 {
+        width: (320/16)+em;
+        height: (185/16)+em;
+        margin-right: (100/16)+em;
+    }
+
+    &__card-text-group {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    &__card-h4 {
+        line-height: 2.5;
     }
 
     &__card-text {
-        margin: (95/16)+em 0 (40/16)+em;
-        letter-spacing: .02em;
+        margin-bottom: (40/16)+em;
+        text-align: left;
         line-height: 2.25;
+    }
+
+    &__card-text:last-child {
+        margin-bottom: 0;
+        letter-spacing: 0.02em;
+    }
+}
+
+.people {
+    padding: (192/16)+em 0;
+
+    &__inner {
+        @include inner();
+    }
+
+    &__title {
+        margin-bottom: (64/16)+em;
+    }
+
+    &__text-group {
+        margin-bottom: (96/16)+em;
+    }
+
+    &__text {
+        text-align: left;
+        letter-spacing: 0.02em;
+        line-height: 1.75;
+        margin-bottom: (40/16)+em;
+    }
+
+    &__text:last-child {
+        margin-bottom: 0;
+    }
+
+    &__card-group {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        position: relative;
+    }
+
+    &__card-img {
+        width: (100/16)+em;
+        height: (105/16)+em;
+        position: absolute;
+        top: 80px;
+        left: -5%;
+    }
+
+    &__card-img2 {
+        width: (100/16)+em;
+        height: (105/16)+em;
+        position: absolute;
+        top: 80px;
+        left: 30%;
+    }
+
+    &__card-img3 {
+        width: (100/16)+em;
+        height: (105/16)+em;
+        position: absolute;
+        top: 80px;
+        left: 65%;
+    }
+
+    &__card {
+        width: 30%;
+    }
+
+    &__self {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        border: 4px solid $accent-color;
+        border-radius: 10px;
+        height: (161/16)+em;
+        padding: (32/16)+em;
+        margin-bottom: (47.5/16)+em;
+    }
+
+    &__card-name {
+        font-size: (20/16)+rem;
+        margin-top: 1em;
+    }
+
+    &__card-text-group {
+        background-color: $bg-color;
+        border-radius: 5px;
+        padding: (64/16)+em (32/16)+em;
+    }
+
+    &__card-text {
+        text-align: left;
+        letter-spacing: 0.02em;
+        line-height: 2.25;
+        margin-bottom: (40/16)+em;
+    }
+
+    &__card-text:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+.story {
+    background-color: $bg-color;
+    padding: (192/16)+em 0 (307/16)+em;
+
+    &__inner {
+        @include inner();
+    }
+
+    &__text-group {
+        text-align: center;
+        margin: (64/16)+em 0;
+    }
+
+    &__text {
+        display: inline-block;
+        text-align: left;
+        margin-bottom: (40/16)+em;
+    }
+
+    &__text:last-child {
+        margin-bottom: 0;
+    }
+
+    &__card-img {
+        width: (300/16)+em;
+        height: (286/16)+em;
+    }
+
+    &__card {
+        background-color: $main-color;
+        padding: (64/16)+em (129/16)+em;
+        margin-bottom: (64/16)+em;
+    }
+
+    &__card:last-child {
+        margin-bottom: 0;
+    }
+
+    &__card-title {
+        font-size: (24/16)+rem;
+        line-height: 1.167;
+    }
+
+    &__card-subtitle {
+        margin: (32/16)+em 0 (64/16)+em;
+    }
+
+    &__card-flex {
+        display: flex;
+        justify-content: space-between;
+        vertical-align: top;
+    }
+
+    &__card-flex2 {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left: (93/16)+em;
+    }
+
+    &__card-text {
+        letter-spacing: 0.02em;
+        line-height: 2.25;
+        margin-bottom: (40/16)+em;
+    }
+
+    &__card-text:last-child {
+        margin-bottom: 0;
+    }
+
+    &__foot {
+        margin-top: (230/16)+em;
+        position: relative;
+    }
+
+    &__foot-text {
+        margin-bottom: (40/16)+em;
+    }
+
+    &__foot-text:last-child {
+        margin-bottom: 0;
+    }
+
+    &__foot-img {
+        width: (97/16)+em;
+        height: (193/16)+em;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        left: 75%;
+        bottom: 0;
+    }
+}
+
+.jump {
+    padding: (192/16)+em 0;
+
+    &__inner {
+        @include inner();
+    }
+
+    &__flex {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__img {
+        width: (100/16)+em;
+        height: (164/16)+em;
+        margin-bottom: (33/16)+em;
+    }
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    &__link {
+        display: inline-block;
+        font-size: (20/16)+rem;
+        padding: (22/20)+em (32/20)+em;
+        border: 1px solid;
+        border-radius: (74/20)+em;
+        width: fit-content;
+        font-size: (20/16)+rem;
     }
 }
