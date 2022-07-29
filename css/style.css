@@ -61,18 +61,52 @@ header {
 }
 @media screen and (max-width: 680px) {
   .top__btn {
+    display: block;
     /* ボタンの配置位置  */
     position: fixed;
-    top: 32px;
+    top: 44px;
     right: 16px;
     /* ボタンの大きさ  */
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 20px;
     /* 最前面に */
     z-index: 10;
-    background-color: red;
     /* わかりやすいように */
   }
+}
+.top__btn-line {
+  display: block;
+  position: relative;
+  top: -50%;
+  /* バーガー線の位置基準として設定 */
+  width: 100%;
+  /* 線の長さと高さ */
+  height: 4px;
+  border-radius: 4px;
+  background-color: #564824;
+  transition: 0.2s;
+  transform: translateY(-4px);
+}
+.top__btn-line.open {
+  content: "";
+  transition: 0.2s;
+  transform: rotate(40deg);
+}
+.top__btn-line.open::after {
+  transition: 0.2s;
+  transform: rotate(-80deg);
+}
+.top__btn-line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background-color: #564824;
+  transition: 0.2s;
+  transform: translateY(12px);
 }
 .top__ul {
   display: flex;
@@ -83,8 +117,9 @@ header {
 @media screen and (max-width: 680px) {
   .top__ul {
     position: fixed;
-    right: -70%;
-    width: 70%;
+    right: 0;
+    top: 0;
+    width: 100%;
     height: 100vh;
     margin-left: auto;
     /* メニューを縦に */
@@ -93,7 +128,11 @@ header {
     color: #efefef;
     background-color: rgba(167, 148, 58, 0.7);
     transition: 0.3s;
+    opacity: 0;
   }
+}
+.top__ul.open {
+  opacity: 1;
 }
 .top__li {
   font-size: 1.5rem;

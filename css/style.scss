@@ -102,17 +102,55 @@ header {
         display: none;
 
         @include pc {
+            display: block;
             /* ボタンの配置位置  */
             position: fixed;
-            top: 32px;
+            top: 44px;
             right: 16px;
             /* ボタンの大きさ  */
-            width: 48px;
-            height: 48px;
+            width: 40px;
+            height: 20px;
             /* 最前面に */
             z-index: 10;
-            background-color: red;
             /* わかりやすいように */
+        }
+
+        &-line {
+            display: block;
+            position: relative;
+            top: -50%;
+            /* バーガー線の位置基準として設定 */
+            width: 100%;
+            /* 線の長さと高さ */
+            height: 4px;
+            border-radius: 4px;
+            background-color: #564824;
+            transition: .2s;
+            transform: translateY(-4px);
+
+            &.open {
+                content: "";
+                transition: .2s;
+                transform: rotate(40deg);
+            }
+
+            &.open::after {
+                transition: .2s;
+                transform: rotate(-80deg);
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 4px;
+                background-color: #564824;
+                transition: .2s;
+                transform: translateY(12px);
+            }
         }
     }
 
@@ -124,8 +162,9 @@ header {
 
         @include pc {
             position: fixed;
-            right: -70%;
-            width: 70%;
+            right: 0;
+            top: 0;
+            width: 100%;
             height: 100vh;
             margin-left: auto;
             /* メニューを縦に */
@@ -134,6 +173,11 @@ header {
             color: #efefef;
             background-color: rgba(167, 148, 58, 0.7);
             transition: .3s;
+            opacity: 0;
+        }
+
+        &.open {
+            opacity: 1;
         }
     }
 
