@@ -1196,4 +1196,26 @@ footer {
   width: fit-content;
   font-size: 1.25rem;
 }
+
+/* book */
+.nothing__inner {
+  max-width: 80em;
+  width: 66.667%;
+  margin: auto;
+}
+@media screen and (max-width: 680px) {
+  .nothing__inner {
+    width: 86.473%;
+  }
+}
+.nothing__flex {
+  display: flex;
+}
+.nothing__img {
+  width: 36em;
+  height: 24.375em;
+}
+.nothing__text-group {
+  text-align: left;
+}
 /*# sourceMappingURL=style.css.map */
