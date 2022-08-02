@@ -156,7 +156,7 @@ header {
 
     &__ul {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         flex-wrap: wrap;
         list-style: none;
 
@@ -190,6 +190,20 @@ header {
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
+        align-items: center;
+    }
+
+    &__Calendar {
+        background-color: #F4CC5C;
+        border-radius: 30px;
+        padding: (2/16)+em (18/16)+em;
+        text-align: center;
+    }
+
+    &__Calendar-img {
+        width: (14/16)+em;
+        height: (16/16)+em;
+        margin-right: (6/16)+em;
     }
 
     &__sns {
@@ -906,7 +920,7 @@ footer {
 
     &__card {
         background-color: $main-color;
-        padding: (68/16)+em;
+        padding: 5%;
     }
 
     &__card-flex {
@@ -1027,7 +1041,7 @@ footer {
         border: 4px solid $accent-color;
         border-radius: 10px;
         height: (161/16)+em;
-        padding: (32/16)+em;
+        padding: 5%;
         margin-bottom: (47.5/16)+em;
     }
 
@@ -1039,7 +1053,7 @@ footer {
     &__card-text-group {
         background-color: $bg-color;
         border-radius: 5px;
-        padding: (64/16)+em (32/16)+em;
+        padding: 10% 5%;
     }
 
     &__card-text {
@@ -1085,7 +1099,7 @@ footer {
 
     &__card {
         background-color: $main-color;
-        padding: (64/16)+em (129/16)+em;
+        padding: 5% 10%;
         margin-bottom: (64/16)+em;
     }
 
