@@ -16,6 +16,10 @@ $font-color: #54777D;
     max-width: (1280/16)+em;
     width: 66.667%;
     margin: auto;
+
+    @include pc {
+        width: 86.473%;
+    }
 }
 
 @mixin title ($c: $font-color) {
@@ -253,16 +257,36 @@ header {
         aspect-ratio: 1.851/1;
         margin-top: (205/16)+em;
         position: relative;
+
+        @include pc {
+            background: none;
+            margin-top: (64/16)+em;
+        }
     }
 
     &__img {
         width: (250/16)+em;
-        height: (250/16)+em;
+        aspect-ratio: 1/1;
         position: absolute;
         top: 0;
         left: 50%;
         transform: translateX(-50%);
         z-index: 999;
+
+        @include pc {
+            width: 42.75%;
+        }
+    }
+
+    &__select {
+        display: none;
+
+        @include pc {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: nowrap;
+        }
     }
 }
 
@@ -270,7 +294,7 @@ header {
     background-color: #F2ECD8;
     padding: (192/16)+em 0;
 
-    @include title;
+    @include title($font-color);
 
     &__concept {
         background: url("../images/about_bg.png") center center/ cover;
@@ -298,12 +322,7 @@ header {
         @include inner;
     }
 
-    &__title {
-        margin-bottom: (64/34)+em;
-        font-size: (34/16)+rem;
-        font-weight: normal;
-        color: $main-color;
-    }
+    @include title;
 
     &__text {
         margin: auto;
