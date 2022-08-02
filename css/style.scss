@@ -260,6 +260,8 @@ header {
         z-index: 999;
 
         @include pc {
+            position: static;
+            transform: translateY(0);
             width: 42.75%;
         }
     }
@@ -272,6 +274,61 @@ header {
             justify-content: center;
             align-items: flex-start;
             flex-wrap: nowrap;
+        }
+
+        &-menu {
+            width: 25px;
+            margin: 10px 18px 0;
+
+            &-center {
+                width: 25px;
+                margin: 24px 18px 0;
+            }
+        }
+    }
+
+    &__images {
+        display: none;
+
+        @include pc {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            flex-wrap: nowrap;
+            position: relative;
+            overflow: hidden;
+            margin-top: 36px;
+        }
+
+        &-photo {
+            width: 61%;
+            margin: 0 12px;
+
+            &-l {
+                width: 61%;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                transform: translate(-80%, -50%);
+            }
+
+            &-r {
+                width: 61%;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                transform: translate(80%, -50%);
+            }
+        }
+
+        &-arrowL {
+            width: 6.5%;
+            margin: 0 12px 21px;
+        }
+
+        &-arrowR {
+            width: 6.5%;
+            margin: 0 12px 21px;
         }
     }
 }
@@ -299,44 +356,6 @@ header {
         width: fit-content;
         font-size: (20/16)+rem;
         background-color: #fff;
-    }
-}
-
-.concept {
-
-    &__inner {
-        @include inner;
-    }
-
-    @include title;
-
-    &__text {
-        margin: auto;
-        width: 70%;
-        color: $main-color;
-        text-align: left;
-    }
-}
-
-.something {
-
-    padding: (128/16)+em 0;
-
-    &__title {
-        margin-bottom: (64/40)+em;
-        font-size: (40/16)+rem;
-        font-weight: normal;
-    }
-
-    &__flex {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-        flex-wrap: nowrap;
-    }
-
-    &__card {
-        width: 21.875%;
     }
 }
 
@@ -684,17 +703,7 @@ header {
         @include inner();
     }
 
-    &__title {
-        font-size: (40/16)+rem;
-        font-weight: 300;
-        margin: 110px 0 30px;
-    }
-
-    &__subtitle {
-        font-size: 1em;
-        font-weight: 300;
-        margin-bottom: (30/16)+em;
-    }
+    @include title;
 
     &__text-block {
         text-align: center;
