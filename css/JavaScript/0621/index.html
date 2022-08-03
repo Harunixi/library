@@ -1,0 +1,66 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScriptクイズ⑩</title>
+    <style>
+        .player {
+            position: fixed;
+            bottom: 0;
+            left: calc(50% - 50px);
+            width: 100px;
+        }
+
+        .airPlane {
+            position: absolute;
+            top: 20vh;
+            left: 0;
+            width: 120px;
+            transition-property: left;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .move {
+            left: calc(100% - 125px);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="http://drive.google.com/uc?export=view&id=18CxjBCH1Ywhk5JI8D8n8MkMDX9o_vK92" alt="飛行機" class="airPlane" />
+    <img src="http://drive.google.com/uc?export=view&id=14gSe_yYYMp-uTLeEFsDohphXjFI7Qczd" alt="操縦者" class="player" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+        //全てのJavaScriptコードを送ってください。
+        const plane = document.querySelector('.airPlane');
+        const player = document.querySelector('.player');
+
+        player.addEventListener('click', function () {
+            plane.classList.toggle('move');
+            if (plane.classList.contains('move')) {
+                plane.removeAttribute("style");
+                player.removeAttribute("style");
+            } else {
+                plane.style.setProperty("transform", "scale(-1, 1)");
+                player.style.setProperty("transform", "scale(-1, 1)");
+            }
+        });
+    </script>
+    <!-- <script>
+        //jQuery
+        //全てのJavaScriptコードを送ってください。
+        $(function() {
+
+            $('.player').on('click', function() {
+                $('.airPlane').toggleClass('move');
+                console.log('move')
+            });
+
+        })
+    </script> -->
+</body>
+
+</html>

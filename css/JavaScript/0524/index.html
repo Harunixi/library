@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0524クイズ</title>
+</head>
+
+<body>
+    <h1>照ノ富士</h1>
+    <ul class="grades">
+        <li>横綱</li>
+        <li>所属部屋：伊勢ヶ濱</li>
+        <li>一月場所：11勝4敗</li>
+        <li>三月場所：3勝3敗9休</li>
+    </ul>
+    <button type="button">令和四年五月場所</button>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        const terunofuji = {
+            "大栄翔": "負け",
+            "高安": "勝ち",
+            "霧馬山": "勝ち",
+            "琴ノ若": "勝ち",
+            "北勝富士": "勝ち",
+            "玉鷲": "負け",
+            "遠藤": "勝ち",
+            "隆の勝": "負け",
+            "翔猿": "勝ち",
+            "豊昇龍": "勝ち",
+            "阿炎": "勝ち",
+            "若隆景": "勝ち",
+            "貴景勝": "勝ち",
+            "正代": "勝ち",
+            "御嶽海": "勝ち"
+        };
+    </script>
+   <script>
+//ここに記述したJavaScriptを送ってください。
+let win = 0;
+let lose = 0;
+const button = document.querySelector("button");
+const li = document.createElement("li");
+const ul = document.querySelector("ul");
+for(const key in terunofuji){
+    if(terunofuji[key] === "勝ち"){
+        win++;
+    }else{
+        lose++;
+    }
+}
+button.addEventListener('click',() => {
+    li.innerText = `五月場所：${win}勝${lose}敗`;
+    ul.appendChild(li);
+})
+  </script>
+</body>
+
+</html>

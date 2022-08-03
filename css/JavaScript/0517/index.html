@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0517クイズ</title>
+</head>
+
+<body>
+    <h1 class="getRank">ビジュアル女王</h1>
+    <div class="result"></div>
+
+    <h1 class="getMember">今月の少女</h1>
+    <div class="member"></div>
+
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script>
+        const queendom2 = {
+            "solo": ["ヒョリン"],
+            "Brave Girls": ["ミニョン", "ユジョン", "ウンジ", "ユナ"],
+            "WJSN": ["ソラ", "ボナ", "エクシ", "スビン", "ルダ", "ウンソ", "ヨルム", "ダヨン", "ヨンジョン"],
+            "LOONA": ["ヒジン", "ヒョンジン", "ハスル", "ヨジン", "ビビ,", "キムリップ", "ジンソル", "チェリ", "イヴ", "チュウ", "ゴウォン",
+                "オリビアヘ"
+            ],
+            "Kep1er": ["ユジン", "シャオティン", "マシロ", "チェヒョン", "ダヨン", "ヒカル", "バヒエ", "ヨンウン", "イエソ"],
+            "VIVIZ": ["ウナ", "シンビ", "オムジ"]
+        }
+        
+</script>
+<script>
+//こちらのコードのみを送ってください。
+    const result = document.querySelector(".result");
+    const getRank = document.querySelector(".getRank");
+    getRank.addEventListener('click', ()=>{
+        result.innerText = `投票の結果選ばれたのは宇宙少女の${queendom2.WJSN[0]}です。`
+    })
+
+    const member = document.querySelector(".member");
+    const ul = document.createElement("ul");
+    member.appendChild(ul);
+    const getMember = document.querySelector(".getMember");
+    getMember.addEventListener('click', ()=>{
+        for(let i = 0;i < queendom2.LOONA.length;i++){
+            const li = document.createElement("li");
+            ul.appendChild(li);
+            li.innerText = queendom2.LOONA[i];
+        }
+    })
+</script>
+</body>
+
+</html>
