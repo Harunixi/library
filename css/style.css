@@ -178,7 +178,7 @@ header {
 }
 
 .firstview {
-  background: url("../images/firstview.png") center center/cover;
+  background: url("../images/big_bg.png") center center/cover;
   height: 100vh;
   width: 100%;
 }
@@ -930,7 +930,7 @@ footer {
     width: 86.473%;
   }
 }
-.explanation__title {
+.explanation__title-bottom {
   margin-bottom: 4em;
 }
 .explanation__logo {
@@ -1198,6 +1198,9 @@ footer {
 }
 
 /* book */
+.nothing {
+  margin: 12em 0;
+}
 .nothing__inner {
   max-width: 80em;
   width: 66.667%;
@@ -1210,12 +1213,229 @@ footer {
 }
 .nothing__flex {
   display: flex;
+  align-items: center;
 }
 .nothing__img {
   width: 36em;
-  height: 24.375em;
+  height: 20.625em;
+  margin-right: 4.3125em;
 }
 .nothing__text-group {
+  text-align: left;
+}
+.nothing__text {
+  line-height: 2.25;
+  letter-spacing: 0.02em;
+  margin-bottom: 2.5em;
+}
+.nothing__text:last-child {
+  margin-bottom: 0;
+}
+
+.Borrow {
+  background: url("../images/book_bg.png") center center/cover;
+  height: 80vh;
+  width: 100%;
+  color: #fff;
+}
+.Borrow__inner {
+  max-width: 80em;
+  width: 66.667%;
+  margin: auto;
+}
+@media screen and (max-width: 680px) {
+  .Borrow__inner {
+    width: 86.473%;
+  }
+}
+.Borrow__title {
+  padding-top: 5em;
+}
+.Borrow__title-bottom {
+  margin-bottom: 6.25em;
+}
+.Borrow__text-group {
+  display: inline-block;
+}
+.Borrow__text {
+  display: block;
+  text-align: left;
+  line-height: 2.25;
+  letter-spacing: 0.02em;
+}
+
+.put__inner {
+  max-width: 80em;
+  width: 66.667%;
+  margin: auto;
+}
+@media screen and (max-width: 680px) {
+  .put__inner {
+    width: 86.473%;
+  }
+}
+.put__title {
+  margin-top: 8.1625em;
+}
+.put__title-bottom {
+  margin-bottom: 6.25em;
+}
+.put__text-group {
+  display: inline-block;
+  margin-bottom: 6em;
+}
+.put__text {
+  display: block;
+  text-align: left;
+  line-height: 2.25;
+  letter-spacing: 0.02em;
+}
+
+.what__inner {
+  max-width: 80em;
+  width: 66.667%;
+  margin: auto;
+  background-color: #F2ECD8;
+  padding: 6.25em;
+}
+@media screen and (max-width: 680px) {
+  .what__inner {
+    width: 86.473%;
+  }
+}
+.what__title {
+  font-size: 1.5rem;
+  margin-bottom: 6.25em;
+}
+.what__flex {
+  display: flex;
+  align-items: center;
+}
+.what__img {
+  width: 18.75em;
+  height: 15.1875em;
+  margin-right: 4.625em;
+}
+.what__text-group {
+  display: inline-block;
+}
+.what__text {
+  display: block;
+  text-align: left;
+  line-height: 2.25;
+  letter-spacing: 0.02em;
+  margin-bottom: 2.5em;
+}
+.what__text:last-child {
+  margin-bottom: 0;
+}
+
+.prelusion__inner {
+  max-width: 80em;
+  width: 66.667%;
+  margin: auto;
+}
+@media screen and (max-width: 680px) {
+  .prelusion__inner {
+    width: 86.473%;
+  }
+}
+.prelusion__title {
+  display: inline-block;
+  border-bottom: 1px dashed #000;
+  margin: 8em 0 4.6875em;
+  padding-bottom: 0.625em;
+}
+.prelusion__flex {
+  display: flex;
+  justify-content: center;
+}
+.prelusion__img {
+  width: 31em;
+  height: 19.375em;
+  margin-right: 6.25em;
+}
+.prelusion__img:last-child {
+  margin-right: 0;
+}
+.prelusion__text-group {
+  display: inline-block;
+}
+.prelusion__text {
+  text-align: left;
+  line-height: 2.25;
+  letter-spacing: 0.02em;
+  margin: 4em;
+}
+
+.owner__inner {
+  max-width: 80em;
+  width: 66.667%;
+  margin: auto;
+}
+@media screen and (max-width: 680px) {
+  .owner__inner {
+    width: 86.473%;
+  }
+}
+.owner__title {
+  display: inline-block;
+  border-bottom: 1px dashed #000;
+  padding-bottom: 0.625em;
+  margin-bottom: 4.75em;
+}
+.owner__img {
+  width: 100%;
+}
+
+.price__inner {
+  max-width: 80em;
+  width: 66.667%;
+  margin: auto;
+}
+@media screen and (max-width: 680px) {
+  .price__inner {
+    width: 86.473%;
+  }
+}
+.price__title {
+  display: inline-block;
+  border-bottom: 1px dashed #000;
+  padding-bottom: 0.625em;
+  margin-top: 10.625em;
+  margin-bottom: 4.6875em;
+}
+.price__flex {
+  display: flex;
+  justify-content: space-around;
+}
+.price__card {
+  background-color: #F2ECD8;
+  line-height: 2.25;
+  letter-spacing: 0.02em;
+  width: 50%;
+  margin-right: 5em;
+}
+.price__card:last-child {
+  margin-right: 0;
+}
+.price__card-text-group {
+  display: inline-block;
+  padding-top: 4em;
+  padding: 0 1.5em;
+}
+.price__card-money {
+  font-size: 1.5rem;
+}
+.price__card-time {
+  font-size: 1.25rem;
+  margin-bottom: 1.1875em;
+}
+.price__card-time2 {
+  font-size: 1.25rem;
+  margin-bottom: 1.625em;
+}
+.price__card-text {
   text-align: left;
 }
 /*# sourceMappingURL=style.css.map */
