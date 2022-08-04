@@ -189,7 +189,7 @@ header {
 }
 
 .big__bg {
-  background: url("../images/big_bg.png") center center/cover;
+  background: url("../images/illust/top/pc_png/room01.png") center center/cover;
   background-color: #FCF9EA;
   width: 100%;
   aspect-ratio: 1.851/1;
@@ -217,6 +217,110 @@ header {
     transform: translateY(0);
     width: 42.75%;
   }
+}
+.big__rental {
+  background: url("../images/illust/top/pc_png/rental_line.png") top left/cover;
+  position: absolute;
+  width: 16.546%;
+  aspect-ratio: 0.717/1;
+  left: 5.409%;
+  bottom: 26.8%;
+  transition: 0.3s all;
+  z-index: 10;
+}
+.big__rental:hover {
+  background: url("../images/illust/top/pc_png/rental_color.png") top left/cover;
+}
+.big__rental:hover + .big__rental-bubble {
+  opacity: 1;
+}
+.big__rental-bubble {
+  position: absolute;
+  width: 5.407%;
+  aspect-ratio: 0.381/1;
+  left: 19.252%;
+  top: 11.553%;
+  transition: 0.6s all;
+  z-index: 11;
+  opacity: 0;
+}
+.big__lab {
+  background: url("../images/illust/top/pc_png/lab_line.png") center center/cover;
+  position: absolute;
+  width: 14.045%;
+  aspect-ratio: 0.658/1;
+  left: 21.302%;
+  bottom: 16.383%;
+}
+.big__bookshelf {
+  background: url("../images/illust/top/pc_png/bookshelf_line.png") top left/cover;
+  position: absolute;
+  width: 8.718%;
+  aspect-ratio: 1.516/1;
+  left: 40%;
+  top: 36.581%;
+  transition: 0.3s all;
+  z-index: 10;
+}
+.big__bookshelf:hover {
+  background: url("../images/illust/top/pc_png/bookshelf_color.png") top left/cover;
+}
+.big__bookshelf:hover + .big__bookshelf-bubble {
+  opacity: 1;
+}
+.big__bookshelf-bubble {
+  position: absolute;
+  width: 5.072%;
+  aspect-ratio: 0.334/1;
+  left: 36.354%;
+  top: 11.866%;
+  transition: 0.6s all;
+  z-index: 11;
+  opacity: 0;
+}
+.big__borrow {
+  background: url("../images/illust/top/pc_png/borrow_line.png") top left/cover;
+  position: absolute;
+  width: 6.176%;
+  aspect-ratio: 0.41/1;
+  right: 39.463%;
+  top: 39.47%;
+  z-index: 10;
+}
+.big__live {
+  background: url("../images/illust/top/pc_png/live_line.png") top left/cover;
+  position: absolute;
+  width: 13.988%;
+  aspect-ratio: 0.946/1;
+  left: 39.6875%;
+  top: 48.788%;
+  z-index: 10;
+}
+.big__relax {
+  background: url("../images/illust/top/pc_png/relax_line.png") top left/cover;
+  position: absolute;
+  width: 9.777%;
+  aspect-ratio: 0.625/1;
+  right: 25.625%;
+  bottom: 19.9%;
+  transition: 0.3s all;
+  z-index: 10;
+}
+.big__relax:hover {
+  background: url("../images/illust/top/pc_png/relax_color.png") top left/cover;
+}
+.big__relax:hover + .big__relax-bubble {
+  opacity: 1;
+}
+.big__relax-bubble {
+  position: absolute;
+  width: 5.407%;
+  aspect-ratio: 0.341/1;
+  right: 24.479%;
+  bottom: 42.5%;
+  transition: 0.6s all;
+  z-index: 11;
+  opacity: 0;
 }
 .big__select {
   display: none;
