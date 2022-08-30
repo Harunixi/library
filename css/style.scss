@@ -1631,6 +1631,60 @@ footer {
     &__img {
         width: 100%;
     }
+
+    &__box {
+        margin-bottom: (80/16)+em;
+    }
+
+    &__box:last-child {
+        margin-bottom: 0;
+    }
+
+    &__box-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__box-img {
+        width: (380/16)+em;
+        height: (240/16)+em;
+    }
+
+    &__box-text-group {
+        display: inline-block;
+        width: 50%;
+        position: relative;
+    }
+
+    &__box-bg1 {
+        width: (70/16)+em;
+        height: (70/16)+em;
+        position: absolute;
+        top: -8%;
+        left: 44%;
+        z-index: -1;
+    }
+
+    &__box-bg2 {
+        width: (70/16)+em;
+        height: (70/16)+em;
+        position: absolute;
+        top: 0;
+        left: 44%;
+        z-index: -1;
+    }
+
+    &__box-h3 {
+        font-size: (20/16)+rem;
+        font-weight: 500;
+    }
+
+    &__box-text {
+        text-align: left;
+        line-height: 2.125;
+        margin-top: (36/16)+em;
+    }
 }
 
 .price {
@@ -1642,7 +1696,7 @@ footer {
         display: inline-block;
         border-bottom: 1px dashed #000;
         padding-bottom: (10/16)+em;
-        margin-top: (170/16)+em;
+        margin-top: (140/16)+em;
         margin-bottom: (75/16)+em;
     }
 

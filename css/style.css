@@ -1667,6 +1667,51 @@ footer {
 .owner__img {
   width: 100%;
 }
+.owner__box {
+  margin-bottom: 5em;
+}
+.owner__box:last-child {
+  margin-bottom: 0;
+}
+.owner__box-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.owner__box-img {
+  width: 23.75em;
+  height: 15em;
+}
+.owner__box-text-group {
+  display: inline-block;
+  width: 50%;
+  position: relative;
+}
+.owner__box-bg1 {
+  width: 4.375em;
+  height: 4.375em;
+  position: absolute;
+  top: -8%;
+  left: 44%;
+  z-index: -1;
+}
+.owner__box-bg2 {
+  width: 4.375em;
+  height: 4.375em;
+  position: absolute;
+  top: 0;
+  left: 44%;
+  z-index: -1;
+}
+.owner__box-h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.owner__box-text {
+  text-align: left;
+  line-height: 2.125;
+  margin-top: 2.25em;
+}
 
 .price__inner {
   max-width: 80em;
@@ -1682,7 +1727,7 @@ footer {
   display: inline-block;
   border-bottom: 1px dashed #000;
   padding-bottom: 0.625em;
-  margin-top: 10.625em;
+  margin-top: 8.75em;
   margin-bottom: 4.6875em;
 }
 .price__flex {
