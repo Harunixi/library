@@ -158,17 +158,6 @@ header {
 .top__flex.open {
   opacity: 1;
 }
-.top__Calendar {
-  background-color: #F4CC5C;
-  border-radius: 30px;
-  padding: 0.125em 1.125em;
-  text-align: center;
-}
-.top__Calendar-img {
-  width: 0.875em;
-  height: 1em;
-  margin-right: 0.375em;
-}
 @media screen and (max-width: 680px) {
   .top__sns {
     margin-top: 1.125em;
@@ -1747,7 +1736,7 @@ footer {
 .price__card-text-group {
   display: inline-block;
   padding-top: 4em;
-  padding: 0 1.5em;
+  padding: 1.5em;
 }
 .price__card-money {
   font-size: 1.5rem;
@@ -1761,6 +1750,50 @@ footer {
   margin-bottom: 1.625em;
 }
 .price__card-text {
+  text-align: left;
+}
+
+/* library */
+.relax__inner {
+  max-width: 80em;
+  width: 66.667%;
+  margin: auto;
+}
+@media screen and (max-width: 680px) {
+  .relax__inner {
+    width: 86.473%;
+  }
+}
+.relax__title {
+  padding-top: 11.875em;
+}
+.relax__flex {
+  display: flex;
+}
+.relax__price-card {
+  display: inline-block;
+  background-color: #F2ECD8;
+  line-height: 2.25;
+  letter-spacing: 0.02em;
+  width: 50%;
+}
+.relax__price-card-text-group {
+  display: inline-block;
+  padding-top: 4em;
+  padding: 1.5em;
+}
+.relax__price-card-money {
+  font-size: 1.5rem;
+}
+.relax__price-card-time {
+  font-size: 1.25rem;
+  margin-bottom: 1.1875em;
+}
+.relax__price-card-time2 {
+  font-size: 1.25rem;
+  margin-bottom: 1.625em;
+}
+.relax__price-card-text {
   text-align: left;
 }
 /*# sourceMappingURL=style.css.map */

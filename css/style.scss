@@ -224,19 +224,6 @@ header {
         }
     }
 
-    &__Calendar {
-        background-color: #F4CC5C;
-        border-radius: 30px;
-        padding: (2/16)+em (18/16)+em;
-        text-align: center;
-    }
-
-    &__Calendar-img {
-        width: (14/16)+em;
-        height: (16/16)+em;
-        margin-right: (6/16)+em;
-    }
-
     &__sns {
 
         @include sp {
@@ -1720,7 +1707,7 @@ footer {
     &__card-text-group {
         display: inline-block;
         padding-top: (64/16)+em;
-        padding: 0 (24/16)+em;
+        padding: (24/16)+em;
     }
 
     &__card-money {
@@ -1738,6 +1725,54 @@ footer {
     }
 
     &__card-text {
+        text-align: left;
+    }
+}
+
+/* library */
+.relax {
+    &__inner {
+        @include inner();
+    }
+
+    &__title {
+        padding-top: (190/16)+em;
+    }
+
+    &__flex {
+        display: flex;
+    }
+
+    //price
+    &__price-card {
+        display: inline-block;
+        background-color: $bg-color;
+        line-height: 2.25;
+        letter-spacing: 0.02em;
+        width: 50%;
+    }
+
+    &__price-card-text-group {
+        display: inline-block;
+        padding-top: (64/16)+em;
+        padding: (24/16)+em;
+    }
+
+    &__price-card-money {
+        font-size: 1.5rem;
+    }
+
+    &__price-card-time {
+        font-size: 1.25rem;
+        margin-bottom: (19/16)+em;
+    }
+
+    &__price-card-time2 {
+        font-size: 1.25rem;
+        margin-bottom: (26/16)+em;
+    }
+
+    &__price-card-text {
         text-align: left;
     }
 }
