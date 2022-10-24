@@ -987,7 +987,7 @@ footer {
     }
 
     &__li {
-        margin: 0 25px;
+        margin: 0 20px;
 
         @include sp {
             margin: 12px 0;
@@ -1739,8 +1739,59 @@ footer {
         padding-top: (190/16)+em;
     }
 
+    &__title-bottom {
+        margin-bottom: (100/16)+em;
+    }
+
     &__flex {
         display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: (105/16)+em 0 (190/16)+em;
+    }
+
+    &__group {
+        width: 28%;
+    }
+
+    &__group-title {
+        display: inline-block;
+        padding-bottom: (10/16)+em;
+        border-bottom: 1px dashed #000;
+
+    }
+
+    &__group-text {
+        padding-top: (25/16)+em;
+    }
+
+    &__group-img {
+        padding-top: (50/16)+em;
+        width: 60%;
+        height: 60%;
+        vertical-align: bottom;
+    }
+
+    &__outtext {
+        padding-top: (130/16)+em;
+    }
+
+    //------ 下揃わない
+    &__group-bottom {
+        display: flex;
+        justify-content: space-around;
+        padding-top: (90/16)+em;
+    }
+
+    &__group-bottom-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__group-bottom-img {
+        width: 60%;
+        height: 40%;
+        margin-top: auto;
     }
 
     //price
@@ -1774,5 +1825,247 @@ footer {
 
     &__price-card-text {
         text-align: left;
+    }
+}
+
+.tariff {
+    &__inner {
+        @include inner();
+        background-color: #F2ECD8;
+        padding: (125/16)+em (100/16)+em (150/16)+em;
+    }
+
+    &__title {
+        display: inline-block;
+        margin-bottom: (18/16)+em;
+        padding-bottom: (10/16)+em;
+        border-bottom: 1px dashed #000;
+    }
+
+    &__top-text {
+        text-align: right;
+    }
+
+    &__top-bottom-text {
+        padding-top: (96/16)+em;
+    }
+
+    &__bottom {
+        padding-top: (50/16)+em;
+    }
+
+    &__flex {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__bottom-group {
+        width: 44%;
+    }
+
+    &__bottom-group-img {
+        width: 20%;
+        height: 50%;
+    }
+
+    &__bottom-group-title {
+        font-size: (24/16)+rem;
+        font-weight: normal;
+        line-height: 2.083;
+        letter-spacing: 0.6em;
+        padding: (24/16)+em 0 (16/16)+em;
+    }
+
+    &__ul {
+        list-style: none;
+        padding-top: (96/16)+em;
+        text-align: left;
+        line-height: 2.5;
+    }
+
+}
+
+.paid {
+
+    &__inner {
+        @include inner();
+        background-color: #F2ECD8;
+        margin-top: (192/16)+em;
+    }
+
+    &__title {
+        display: inline-block;
+        margin-bottom: (18/16)+em;
+        padding-bottom: (10/16)+em;
+        border-bottom: 1px dashed #000;
+    }
+
+    &__center {
+        display: block;
+        text-align: center;
+    }
+
+    &__text {
+        display: inline-block;
+        padding-top: (50/16)+em;
+        text-align: left;
+        line-height: 2.5;
+    }
+
+    &__img {
+        padding-top: (64/16)+em;
+        width: 50%;
+    }
+}
+
+.ss {
+
+    &__inner {
+        @include inner();
+    }
+
+    &__title {
+        display: inline-block;
+        margin-bottom: (18/16)+em;
+        padding-top: (175/16)+em;
+        padding-bottom: (10/16)+em;
+        border-bottom: 1px dashed #000;
+    }
+
+    &__text {
+        margin-bottom: (48/16)+em;
+    }
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    //無料
+    &__group {
+        background-color: #F2ECD8;
+        width: 46%;
+    }
+
+    &__group-flex {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    &__group-h4 {
+        display: block;
+        border-bottom: 1px dashed #000;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: (24/16)+em;
+    }
+
+    &__group-article {
+        display: flex;
+        align-items: center;
+        width: 40%;
+    }
+
+    &__group-article-text {
+        margin-left: (20/16)+em;
+    }
+
+    &__group-article-img {
+        width: auto;
+        height: 40%;
+    }
+
+    //有料
+    &__group-article-1 {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: (25/16)+em;
+    }
+
+    &__group-article-img2 {
+        margin-right: (28/16)+em;
+        width: 30%;
+        height: 2%;
+    }
+
+    //bottom
+    &__text-bottom {
+        width: 46%;
+        margin: (32/16)+em 0 (192/16)+em;
+        line-height: 2.5;
+        text-align: left;
+    }
+}
+
+.borrow {
+    color: #FCF9EA;
+
+    &__inner {
+        @include inner();
+    }
+
+    &__back {
+        background: url(../images/406.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 120vh;
+        width: 100%;
+    }
+
+    &__card-title {
+        padding-top: (100/16)+em;
+    }
+
+    &__card-text-bottom {
+        padding-top: (80/16)+em;
+    }
+
+    &__cost-title {
+        display: inline-block;
+        padding-top: (50/16)+em;
+        padding-bottom: (10/16)+em;
+        border-bottom: 1px dashed #FCF9EA;
+    }
+
+    &__cost-text {
+        padding: (32/16)+em 0;
+    }
+
+    &__cost-flex {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    &__cost-card {
+        color: #54777D;
+        background-color: #F2ECD8;
+        margin-right: 30px;
+        padding: (32/16)+em (18/16)+em;
+        width: 20%;
+    }
+
+    &__cost-card:last-child {
+        margin-right: 0;
+    }
+
+    &__cost-text-bottom {
+        padding-top: (32/16)+em;
+    }
+
+    &__cost-bottom-h4 {
+        display: inline-block;
+        padding-top: (60/16)+em;
+        padding-bottom: (6/16)+em;
+        border-bottom: 1px dashed #FCF9EA;
+    }
+
+    &__cost-bottom-text {
+        padding: (32/16)+em 0 (100/16)+em;
     }
 }
